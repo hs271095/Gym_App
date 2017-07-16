@@ -15,14 +15,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StartActivity" />
+        <activity android:name=".StartActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAI" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".LoadingPage" />
-        <activity android:name=".CoachOne" />
-        <activity android:name=".CoachTwo" />
-        <activity android:name=".CoachThree" />
-        <activity android:name=".CoachFour" />
-        <activity android:name=".Movement"></activity>
+        <activity android:name=".CoachOne">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CoachTwo">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            </activity>
+        <activity android:name=".CoachThree" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAI" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CoachFour">
+            <intent-filter>
+                <action android:name="android.intent.action.M" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Movement" />
     </application>
 
 </manifest>

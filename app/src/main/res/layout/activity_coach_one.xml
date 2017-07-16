@@ -16,35 +16,37 @@
         android:layout_alignParentStart="true">
 
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
             android:layout_height="140dp"
-            app:srcCompat="@drawable/c1"
-            android:id="@+id/imageView2" />
+            app:srcCompat="@drawable/c1" />
 
         <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="144dp"
-            app:srcCompat="@drawable/coach1"
-            android:id="@+id/imageView4" />
+            android:visibility="visible"
+            app:srcCompat="@drawable/coach1" />
 
-        <LinearLayout
-            android:orientation="vertical"
+       <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+           android:id="@+id/ll_1">
+
+        <ImageView
+            android:id="@+id/imageView5"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="135dp"
+            app:srcCompat="@drawable/gymexp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="135dp"
-                app:srcCompat="@drawable/gymexp"
-                android:id="@+id/imageView5" />
-
-            <ListView
-                android:id="@+id/list1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:headerDividersEnabled="false"
-                android:footerDividersEnabled="false" />
-        </LinearLayout>
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:headerDividersEnabled="false"
+            android:footerDividersEnabled="false" />
+         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
 

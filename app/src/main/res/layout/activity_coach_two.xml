@@ -22,10 +22,11 @@
             android:id="@+id/imageView2" />
 
         <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="fill_parent"
             android:layout_height="144dp"
-            app:srcCompat="@drawable/coach1"
-            android:id="@+id/imageView4" />
+            android:visibility="visible"
+            app:srcCompat="@drawable/coach1" />
 
         <LinearLayout
             android:orientation="vertical"
