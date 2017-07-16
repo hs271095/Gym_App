@@ -16,15 +16,15 @@ public class CoachThree extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_coach_three);
         list3=(ListView)findViewById(R.id.list3);
-        ArrayAdapter<String> ad=new ArrayAdapter<String>(CoachThree.this,android.R.layout.simple_list_item_1,item3);
+        ArrayAdapter<String> ad=new ArrayAdapter<String>(CoachThree.this,R.layout.items,item3);
         list3.setAdapter(ad);
 
         list3.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent go=new Intent(CoachThree.this,CoachTwo.class);
+                Intent go=new Intent(CoachThree.this,CoachFour.class);
                 startActivity(go);
             }
         });

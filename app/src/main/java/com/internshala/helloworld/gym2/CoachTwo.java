@@ -16,9 +16,9 @@ public class CoachTwo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_coach_two);
         list2=(ListView)findViewById(R.id.list2);
-        ArrayAdapter<String> ad=new ArrayAdapter<String>(CoachTwo.this,android.R.layout.simple_list_item_1,item2);
+        ArrayAdapter<String> ad=new ArrayAdapter<String>(CoachTwo.this,R.layout.items,item2);
         list2.setAdapter(ad);
 
         list2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
