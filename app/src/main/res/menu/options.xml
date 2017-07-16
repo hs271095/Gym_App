@@ -1,0 +1,14 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+<item
+android:icon="@drawable/ic_menu_sort"
+android:showAsAction="ifRoom">
+<menu>
+    <item
+        android:id="@+id/menuSortNewest"
+        android:title="Sort by newest" />
+    <item
+        android:id="@+id/menuSortRating"
+        android:title="Sort by rating" />
+</menu>
+</item>
+</menu>
